@@ -1,3 +1,16 @@
-This repository is the official pytorch implementation of FAS.
+This is the official implementation based on pytorch of the FAS.
+
+
+## Usage
+We provide an example of using FSTA, which is integrated into the model to operate on intermediate features during the source-domain training stage.
+
+```python
+import torch
+from .frequency_topk import Frequency_TopK
+
+bsz, c, h, w = 128, 384, 14, 14
+immediate_feature = torch.rand(bsz, c, h, w)
+
+output_feature = Frequency_TopK(immediate_feature)
 
 
