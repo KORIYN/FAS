@@ -1,4 +1,4 @@
-This is the official implementation based on pytorch of the FAS.
+This is the official implementation based on pytorch of the FAS method.
 
 
 ## Usage
